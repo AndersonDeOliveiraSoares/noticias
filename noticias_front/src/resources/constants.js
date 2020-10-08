@@ -8,7 +8,6 @@ export const USER_LOGIN = '/api/auth/loginuser'
 export const APP_LOGO = require('../assets/noticias_logo.png');
 export const ALERT_OPTIONS = { autoClose: true, keepAfterRouteChange: true };
 
-export const ROTA_HOME = '/home'
 export const ROTA_CREATE = '/novo'
 export const ROTA_LIST = '/list'
 export const ROTA_EDIT = '/editar/:id'

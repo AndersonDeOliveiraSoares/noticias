@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import api from "../services/api";
 
 import { alertService } from '../resources/alert.service';
-import { API_URL, ROTA_HOME, ROTA_LIST } from '../resources/constants'
+import { API_URL, ROTA_LIST } from '../resources/constants'
 import { ALERT_OPTIONS } from '../resources/constants'
 
 export default class Create extends Component {

@@ -5,14 +5,13 @@ import { isAuthenticated } from "./services/auth";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 
-import Home from './components/home.component.js'
 import Create from './components/cadastra.component';
 import Edit from './components/editar.component';
 import Delete from './components/delete.component';
 import List from './components/list.component';
 import { Alert } from './components/alert.component';
 
-import { ROTA_HOME, ROTA_CREATE, ROTA_LIST, ROTA_EDIT, ROTA_DELETE, ROTA_SIGN_IN, ROTA_SIGN_UP, ROTA_NOT_FOUND} 
+import { ROTA_CREATE, ROTA_LIST, ROTA_EDIT, ROTA_DELETE, ROTA_SIGN_IN, ROTA_SIGN_UP, ROTA_NOT_FOUND} 
         from './resources/constants'
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -53,7 +52,6 @@ const Routes = () => (
               <Route exact path={ROTA_SIGN_IN} component={SignIn} />
               <Route path={ROTA_SIGN_UP} component={SignUp} />
 
-              <PrivateRoute path={ROTA_HOME} component={ Home } />
               <PrivateRoute path={ROTA_CREATE} component={ Create } />
               <PrivateRoute path={ROTA_EDIT} component={ Edit } />
               <PrivateRoute path={ROTA_DELETE} component={ Delete } />

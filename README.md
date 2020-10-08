@@ -1,6 +1,6 @@
 # CRUD de Notícia
 
-Exemplo de utilização de Python (Flask) para desenvolvimento de uma API com autenticação JWT, React para implementação da aplicação cliente (UI) e MongoDB como banco de dados nosql
+Com base no desafio proposto foi criado um CRUD de noticias para exemplificar a utilização de Python (Flask) para desenvolvimento de uma API com autenticação JWT, React para implementação da aplicação cliente (UI) e MongoDB como banco de dados nosql
 
 
 ## Pré-requisitos
@@ -13,15 +13,15 @@ Possuir Python (versão 3.7+), NodeJS (versão 12+) e Docker instalados e divida
 1) Clonar o repositório com o comando abaixo:
 
 ```
-	git clone https://github.com/AndersonDeOliveiraSoares/noticias
+git clone https://github.com/AndersonDeOliveiraSoares/noticias
 ```
 
 2) Executar o dowload da imagem do MongoDB que será como base de dados do sitema, criar seu container e inicializa-lo:
 
 ```
-	docker pull mongo
-	docker create -it --name Mongo -p 27017:27017 mongo
-	docker start Mongo
+docker pull mongo
+docker create -it --name Mongo -p 27017:27017 mongo
+docker start Mongo
 ```
 
 3) Ir para a pasta do projeto noticias_python e criar uma virtualenv
@@ -36,7 +36,7 @@ virtualenv NOTICIAS_ENV
 source NOTICIAS_ENV/bin/activate
 ```
 
-5)Instalar as dependencias
+5) Instalar as dependencias
 
 ```
 pip install -r requirements.txt

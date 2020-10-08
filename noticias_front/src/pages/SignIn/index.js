@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 
-import { USER_LOGIN, ROTA_HOME, ROTA_SIGN_UP } from '../../resources/constants'
+import { USER_LOGIN, ROTA_SIGN_UP, ROTA_LIST } from '../../resources/constants'
 
 import api from "../../services/api";
 import { login } from "../../services/auth";
@@ -27,7 +27,7 @@ class SignIn extends Component {
       try {
         const response = await api.post(USER_LOGIN, { email, password });
         login(response.data.token);
-        this.props.history.push(ROTA_HOME);
+        this.props.history.push(ROTA_LIST);
       } catch (err) {
         alertService.error('Houve um problema com o login, verifique suas credenciais e tente novamente.', ALERT_OPTIONS)
       }
