@@ -1,0 +1,50 @@
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+.form-group.required .control-label:after { 
+  color: #d00;
+  content: "*";
+  position: absolute;
+}
+
+.button-margin {
+  margin-right: 10px;
+}
+body{
+  background: #f8f9fa ;
+  font-family: 'Architects Daughter', cursive;
+}
+input{
+  border: 1px solid #c4c4c4;
+  border-radius: 7px;
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  margin: 20px
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+button {
+  color: #fff;
+  font-size: 16px;
+  background: #054f77;
+  height: 56px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+}
+label {
+  margin-left: 25px;
+}
+textarea {
+  margin-left: 20px;
+}
+#buttons{
+  display: flex;
+  flex-direction: row;
+}
