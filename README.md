@@ -1,52 +1,48 @@
-# CRUD de Notícias
+# CRUD de Notícia
 
-Utilizando Python com Flask para desenvolvimento da API com autenticação, React para desenvolver a interface
-e MongoDB como banco de dados nosql
+Exemplo de utilização de Python (Flask) para desenvolvimento de uma API com autenticação JWT, React para implementação da aplicação cliente (UI) e MongoDB como banco de dados nosql
 
 
 ## Pré-requisitos
 
-* Python 3.7 ou superior (com virtualenv e pip)
-* NodeJS
-* Docker
+Possuir Python (versão 3.7+), NodeJS (versão 12+) e Docker instalados e dividamente configurados
 
-## Instalação
+
+## Execução
 
 1) Clonar o repositório com o comando abaixo:
 
-	git clone XXXXXXXXXXX
+```
+	git clone https://github.com/AndersonDeOliveiraSoares/noticias
+```
 
-2) Baixar a imagem do MongoDB (Docker), com o seguinte comando:
+2) Executar o dowload da imagem do MongoDB que será como base de dados do sitema, criar seu container e inicializa-lo:
 
+```
 	docker pull mongo
-
-3) Criar um container com a imagem baixada:
-
 	docker create -it --name Mongo -p 27017:27017 mongo
-
-4) Inicializar o container criado:
-
 	docker start Mongo
+```
 
-5) Ir para a pasta do projeto noticias_python e criar uma virtualenv
+3) Ir para a pasta do projeto noticias_python e criar uma virtualenv
 
 ```
 virtualenv NOTICIAS_ENV
 ```
 
-6) Ativar a virtual ENV
+4) Ativar a virtual ENV
 
 ```
 source NOTICIAS_ENV/bin/activate
 ```
 
-7)Instalar as dependencias
+5)Instalar as dependencias
 
 ```
 pip install -r requirements.txt
 ```
 
-8) Criar na raíz do projeto noticias_python um arquivo chamado **.env** e atribuir a ele o seguinte conteúdo
+6) Criar na raíz do projeto noticias_python um arquivo chamado **.env** e atribuir a ele o seguinte conteúdo
 
 ```
 PORT=8000
@@ -58,26 +54,26 @@ DB_HOST=127.0.0.1
 DB_PORT=27017
 ```
 
-9) Subir a API Python do cadastro de notícias:
+7) Subir a API Python do cadastro de notícias:
 
 ```
 python app.py
 ```
 
-10) Ir para a pasta do projeto "noticias_front" e instalar suas dependencias
+8) Ir para a pasta do projeto "noticias_front" e instalar suas dependencias
 
 ```
 npm install
 ```
 
-11) Subir a interface gráfica do cadastro de notícias
+9) Subir a interface gráfica do cadastro de notícias
 
 ```
 npm start
 ```
 
-12) Acessar o endereço abaixo
+10) Acessar o endereço abaixo
 
 ```
-localhost:3000
+http://localhost:3000
 ```
