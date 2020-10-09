@@ -14,7 +14,7 @@ class TableRow extends Component {
           </span>
           <div>
             <button>
-              <Link to={"/edit/"+this.props.obj.id} >Editar</Link>
+              <Link to={"/editar/"+this.props.obj.id} >Editar</Link>
             </button> 
           </div>
         </div>
@@ -30,7 +30,7 @@ class TableRow extends Component {
           </span>
           <div>
             <button className="btn btn-danger btn-sm">
-              <Link to={"/delete/"+this.props.obj.id} >Deletar</Link>
+              <Link to={"/apagar/"+this.props.obj.id} >Deletar</Link>
             </button>
           </div>
         </div>

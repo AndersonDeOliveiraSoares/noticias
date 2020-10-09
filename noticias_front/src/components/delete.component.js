@@ -84,7 +84,7 @@ export default class Delete extends Component {
                         Confirmar
                     </button>
                     <Route render={({ history}) => (
-                      <button style={{background: "#054f77", color: "#fff", marginLeft: 20}}
+                      <button style={{background: "#054f77", color: "#fff", margin: 20}}
                         type='button'
                         onClick={() => { history.push(ROTA_LIST) }}
                         className="btn btn-outline-dark">
