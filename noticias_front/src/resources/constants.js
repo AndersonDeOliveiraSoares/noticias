@@ -5,7 +5,6 @@ export const API_URL = BASE_URL + '/api/v1/noticias';
 export const USER_CREATE = '/api/auth/registeruser'
 export const USER_LOGIN = '/api/auth/loginuser'
 
-export const APP_LOGO = require('../assets/noticias_logo.png');
 export const ALERT_OPTIONS = { autoClose: true, keepAfterRouteChange: true };
 
 export const ROTA_CREATE = '/novo'

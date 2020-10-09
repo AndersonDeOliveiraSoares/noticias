@@ -14,7 +14,8 @@
 }
 body{
   background: #f8f9fa ;
-  font-family: 'Architects Daughter', cursive;
+  background-image: url("./assets/fundo2.png");
+  /*font-family: 'Architects Daughter', cursive;*/
 }
 input{
   border: 1px solid #c4c4c4;
